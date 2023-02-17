@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: posts
-          image: posts:0.0.1
+          image: eladron0073/posts
 ---
 apiVersion: v1 
 kind: Service

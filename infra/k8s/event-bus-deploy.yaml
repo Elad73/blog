@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: event-bus
-          image: event-bus:0.0.1
+          image: eladron0073/event-bus
 ---
 apiVersion: v1 
 kind: Service
