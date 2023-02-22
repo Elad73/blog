@@ -1,10 +1,11 @@
 import { ValidationError } from "express-validator";
+import { CustomError } from "./custome-error";
 
-export class ReqeustValidationError extends Error {
+export class ReqeustValidationError extends CustomError {
     statusCode = 400;
 
     constructor(public errors: ValidationError[]) {
-        super();
+        super('Invalid requet parameters');
 
         // Only because we are extending a built in class
         Object.setPrototypeOf(this, ReqeustValidationError.prototype);
